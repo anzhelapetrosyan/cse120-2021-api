@@ -259,7 +259,6 @@ function loadColoringEditItem() {
     document.getElementById("booknum").value = editItem["booknum"];
     document.getElementById("favartist").value = editItem["favartist"];
     document.getElementById("adults").value = editItem["adults"];
-    document.getElementById("yes").value = editItem["yes"];
 }
 
 function editData(id) {
