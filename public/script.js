@@ -233,7 +233,8 @@ function loadBookEditItem() {
     console.log(editItem);
     document.getElementById("_id").innerHTML = editItem["_id"];
     document.getElementById("title").value = editItem["title"];
-    document.getElementById("fullname").value = editItem["fullName"];   
+    document.getElementById("fullname").value = editItem["fullName"]; 
+    document.getElementById("title").value = editItem ["title"];
     document.getElementById("author").value = editItem["author"];   
     document.getElementById("numberofpages").value = editItem["numberofpages"];
     document.getElementById("price").value = editItem["price"];
