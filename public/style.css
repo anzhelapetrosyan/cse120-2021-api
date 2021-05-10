@@ -4,7 +4,6 @@
    box-sizing: border-box;
 }
 body {
-
  font-family: 'Zilla Slab', serif;
 	align-items: center;
 	justify-content: center;
@@ -20,6 +19,7 @@ body {
   -webkit-filter:blur(8px);
 }
 .container {
+background-image: url("book.jpg");
 background-color: #fff;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 background-color: rgb(19, 46, 20); /* Fallback color */
