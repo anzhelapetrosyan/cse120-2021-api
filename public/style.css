@@ -50,12 +50,7 @@ background-color: #fff;
 .header h2 {
 	margin: 0;
 }
-h2{
-    font-size:20pt;
-    font-weight: bold;
-    color: rgb(4, 4, 29);
-    text-align: center;
-}
+
 .form {
   padding: 70px 70px;
 }
