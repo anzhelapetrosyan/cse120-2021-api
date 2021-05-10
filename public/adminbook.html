@@ -107,4 +107,32 @@
       <div class="form-control">
            <label>Publishing Date</label>
            <br>
-           <input type=
+           <input type="date" onchange="handlePubYearChange(event)"  id="publishingyear">
+
+      </div>
+      <br>
+      <div class="form-control">
+           <label>Original Publishing Date</label>
+           <br>
+           <input type="date" id="originalpubdate" onchange="handleOriginalPubYearChange(event)" >
+
+      </div>
+      <br>
+      <div class="form-control">
+      <label>Genre <sum>*</sum></label>
+      <br>
+      <input type="text" id="genre" onchange="handleGenreChange(event)" required>
+      </div>
+      <div>
+
+         <button id="Submit" onclick="SaveData(event)">Submit</button>
+
+      </div>
+      
+  </form>
+  <script src="script.js"></script>
+    </div>
+</body>
+</html>
+
+     
