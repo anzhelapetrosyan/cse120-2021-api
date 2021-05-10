@@ -9,23 +9,27 @@
 			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
 			crossorigin="anonymous"></script>
 	</head>
-    <div>
+
       <body onload="loadExistingData()">
+    <div class="header1">
 		<h1>My Hobby Admin Page</h1>
     </div>
-    <div>
+    <br>
+    <div class="header1">
       <h2 onclick="toggleColoringData()" style="cursor:pointer;text-decoration:underline;">My Coloring Data</h2>
-      <div id="coloringDataContainer">Loading...</div>
-    </div>
-    <div style="clear:left;">
+      </div>
       <br>
+      <div id="coloringDataContainer">Loading...</div>
+    <div  class="header1" style="clear:left;">
       <h2 onclick="toggleBookData()" style="cursor:pointer;text-decoration:underline;">My Book Data</h2>
+    </div>
+    <br>
       <div id="bookDataContainer">Loading...</div>
     </div>
-    <div style="clear:left;">
-      <br>
+    <div class="header1" style="clear:left;">
       <h2 onclick="toggleOtherData()" style="cursor:pointer;text-decoration:underline;">Other's Data</h2>
       <div id="otherDataContainer">Loading...</div>
+      <br>
     </div>
 	</body>
 </html>
