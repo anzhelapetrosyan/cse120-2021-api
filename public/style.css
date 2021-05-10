@@ -19,6 +19,10 @@ body {
   filter: blur(8px);
   -webkit-filter:blur(8px);
 }
+
+.form {
+  padding: 70px 70px;
+}
 .container {
 background-color: #fff;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
