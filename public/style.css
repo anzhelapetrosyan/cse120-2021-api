@@ -36,10 +36,26 @@ background-color: rgba(54, 66, 43, 0.884); /* Black w/opacity/see-through */
   text-align: center;
 }
 
+.container1{
+background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+ padding: 30px;
+}
+
+
 .header h2 {
 	margin: 0;
 }
-
+h2{
+    font-size:20pt;
+    font-weight: bold;
+    color: rgb(4, 4, 29);
+    text-align: center;
+}
 .form {
   padding: 70px 70px;
 }
