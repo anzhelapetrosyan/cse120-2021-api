@@ -19,8 +19,8 @@ body {
   -webkit-filter:blur(8px);
 }
 .container {
-background-image: url("book.jpg");
-background-color: #fff;
+
+background-color: rgba(241, 202, 241, 0.336);
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 background-color: rgb(19, 46, 20); /* Fallback color */
 background-color: rgba(54, 66, 43, 0.884); /* Black w/opacity/see-through */
