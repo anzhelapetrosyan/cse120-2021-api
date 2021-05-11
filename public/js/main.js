@@ -60,7 +60,7 @@ function editData(id) {
             console.log(item); 
             localStorage = window.localStorage;
             localStorage.setItem('editItem', JSON.stringify(item));
-            if (item.project == "favhobby") {
+            if (item.project == "myColoring") {
               document.location  = "coloring.html";
             } else {
               document.location  = "book.html";
@@ -137,7 +137,7 @@ function loadExistingData() {
         loadedData = data.data;
         data.data.forEach(elem => {
           if (elem["owner"] == "Anzhela Petrosyan") {
-            if (elem["project"] == "favhobby") {
+            if (elem["project"] == "myColoring") {
               myHobbyData.push(elem);
             } else {
               myBookData.push(elem);
@@ -252,7 +252,7 @@ function displayData(data, containerDivName) {
  $.ajax({
       type: 'POST',
       url: "https://cse120-2021api-anzhela.herokuapp.com",
-      data: updatedHobby,
+      data: updatedColoring,
       cache: false,
       dataType : 'json',
       success: function (data) {
