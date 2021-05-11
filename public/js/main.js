@@ -1,15 +1,40 @@
 
 var loadedData = [];
 
-function loadEditItem() {
+function loadBookEditItem() {
     localStorage = window.localStorage;
     editItem = JSON.parse(localStorage.getItem("editItem"));
     console.log(editItem);
-    document.getElementById("_id").innerHTML = editItem["_id"];
+   document.getElementById("_id").innerHTML = editItem["_id"];
     document.getElementById("title").value = editItem["title"];
-    document.getElementById("fullname").value = editItem["fullName"];   
+    document.getElementById("fullname").value = editItem["fullName"]; 
+    document.getElementById("title").value = editItem ["title"];
     document.getElementById("author").value = editItem["author"];   
-    document.getElementById("pages").value = editItem["noOfPgs"];
+    document.getElementById("numberofpages").value = editItem["numberofpages"];
+    document.getElementById("price").value = editItem["price"];
+    document.getElementById("currency").value = editItem["currency"];
+    document.getElementById("language").value = editItem["language"];
+    document.getElementById("edition").value = editItem["edition"];
+    document.getElementById("publisher").value = editItem["publisher"];
+    document.getElementById("publishingyear").value = editItem["publishingyear"];
+    document.getElementById("originalpubdate").value = editItem["originalpubdate"];
+    document.getElementById("genre").value = editItem["genre"];
+}
+
+function loadColoringEditItem() {
+    localStorage = window.localStorage;
+    editItem = JSON.parse(localStorage.getItem("editItem"));
+    console.log(editItem);
+    document.getElementById("_id").value = editItem["_id"];
+    document.getElementById("fullname").value = editItem["fullname"];
+    document.getElementById("country").value = editItem["country"]; 
+    document.getElementById("date").value = editItem["date"];
+    document.getElementById("gender").value = editItem["gender"];
+    document.getElementById("color").value = editItem["color"];
+    document.getElementById("colorw").value = editItem["colorw"];      
+    document.getElementById("booknum").value = editItem["booknum"];
+    document.getElementById("favartist").value = editItem["favartist"];
+    document.getElementById("adults").value = editItem["adults"];
 }
 
 function editData(id) {
@@ -39,7 +64,7 @@ function deleteData(id) {
 
     $.ajax({
         type: 'POST',
-        url: "https://cse120-2021-api.herokuapp.com/data/delete",
+        url: "https://cse120-2021api-anzhela.herokuapp.com/data/delete",
         data: tmp,
         cache: false,
         dataType : 'json',
@@ -63,7 +88,7 @@ function saveData() {
 
     $.ajax({
         type: 'POST',
-        url: "https://cse120-2021-api.herokuapp.com/data",
+        url: "https://cse120-2021api-anzhela.herokuapp.com/data",
         data: tmp,
         cache: false,
         dataType : 'json',
@@ -82,7 +107,7 @@ function saveData() {
 function loadExistingData() {
     $.ajax({
         type : "GET",
-        url : "https://cse120-2021-api.herokuapp.com/data",
+        url : "https://cse120-2021api-anzhela.herokuapp.com/data",
         dataType : "json",
         success : function(data) {
         	console.log("success", data);
