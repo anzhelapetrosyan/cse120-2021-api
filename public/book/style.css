@@ -1,0 +1,158 @@
+ 
+body{
+    background-color: rgba(241, 202, 241, 0.336);
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+     justify-content: center;
+    color: rgb(4, 4, 29);
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    }
+.container1 {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+ padding: 30px;
+ 
+}
+
+
+h2{
+    font-size:20pt;
+    font-weight: bold;
+    color: rgb(4, 4, 29);
+    text-align: center;
+}
+  
+  div{
+    border-radius: 5px;
+  }
+  
+  span{
+    color: black;
+  }
+
+  
+div.Mydiv3{
+    background-color: white;
+    border: 3px solid purple;
+    margin:10px;
+    border-radius: 10px;
+    padding:50px;
+    width:500px;
+    height:200px;
+
+  }
+  
+
+  .Mydiv {
+    border: 3px solid rgb(238, 250, 255);
+    margin:20px;
+    border-radius: 10px;
+    padding:40px;
+    width:500px;
+    background-color: white;
+    
+  }
+
+  
+      .button {
+    background-color: white;
+    border: 2px solid purple;
+    color: purple;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 10px;
+    position: absolute;
+    left: 300px;
+    font-family: sofia;
+
+  }
+
+.form button {
+  background-color: #8e44ad;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+
+}
+.button:hover {
+  background-color: rgb(238, 250, 255);
+  color:rgb(238, 250, 255);
+  }
+  
+
+
+#otherMaterial {
+  display: none;
+}
+
+#otherLanguage {
+  display: none;
+}
+
+#otherOLanguage {
+  display: none;
+}
+
+div.item {
+	min-width: 200px;
+	width: 20%;
+	height: 450px;
+	background-color: #purple;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+	position: relative;
+}
+  
+
+#coloringDataContainer div.item {
+  background-color: rgb(255, 255, 220);
+}
+
+#bookDataContainer div.item {
+  background-color: rgb(255, 255, 220) ;
+}
+
+#otherDataContainer {
+  display: none;
+}
+
+div.item button {
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+}
+
+div.item button.edit {
+	right: 70px;
+}
+
+span.item {
+	line-height: 16px;
+	font-size: 14px;
+}
+
+span.item b {
+	margin-right: 10px;
+}
+
+span.undefined {
+	color: rgb(6, 6, 37);
+}
