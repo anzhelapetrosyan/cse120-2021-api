@@ -481,3 +481,76 @@ function updateData(e) {
       }
     });
 }
+
+function ColoringData(e) {
+  e.preventDefault();
+    if(validateFormData() == false) {
+    return;
+  } else {console.log("The current value is", favhobby)
+  }
+  $.ajax({
+    type: 'POST',
+    url: "https://cse120-2021api-anzhela.herokuapp.com/data",
+    data: favhobby,
+    cache: false,
+    dataType : 'json',
+    success: function (data) {
+      console.log("success");
+    },
+    error: function (xhr) {
+      console.error("Error in post", xhr);
+    },
+    complete: function () {
+      console.log("Complete");  
+    }
+  });
+}
+
+function saveData() {
+	var tmp = {
+		"test": "Data"
+	}
+
+    $.ajax({
+        type: 'POST',
+        url: "https://cse120-2021api-anzhela.herokuapp.com/data",
+        data: tmp,
+        cache: false,
+        dataType : 'json',
+        success: function (data) {
+        	console.log("success");
+        },
+        error: function (xhr) {
+            console.error("Error in post", xhr);
+        },
+        complete: function () {
+            console.log("Complete");  
+        }
+    });
+}
+
+function loadExistingData() {
+	var existingData = [];
+  $.ajax({
+    type : "GET",
+    url : "https://cse120-2021api-anzhela.herokuapp.com/data",
+    dataType : "json",
+    success : function(data) {
+    console.log("success", data);
+    existingData = data;
+    displayData(existingData.data);
+    },
+    error : function(data) {
+        console.log("Error")
+    }
+  });
+}
+
+function displayData(existingData) {
+  document.getElementById("existingData").innerHTML = "<ul>";
+  for (var i = 0; i < existingData.length; i++) {
+    currentBook = existingData[i];
+    document.getElementById("existingData").innerHTML += "<li><i>" + currentBook.fullname + "</li> : <b>" + currentBook.title + "</b></li>";
+  }
+  document.getElementById("existingData").innerHTML += "</ul>" 
+}
