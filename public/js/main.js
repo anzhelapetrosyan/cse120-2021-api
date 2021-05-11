@@ -50,7 +50,6 @@ function loadColoringEditItem() {
     document.getElementById("adults").value = editItem["adults"];
 }
 
-
 function editData(id) {
     var tmp = id.split("edit_");
     var item_id = tmp[1];
@@ -210,7 +209,7 @@ function displayData(data, containerDivName) {
         document.getElementById(containerDivName).appendChild(item);
     })
 
-    document.querySelectorAll("#coloringDataContainer div.item").forEach(div => {
+    document.querySelectorAll("#chessDataContainer div.item").forEach(div => {
           div.addEventListener("click", function(e){
           if (this.style.height == "auto") {
           this.style.height = "30px";
@@ -233,7 +232,7 @@ function displayData(data, containerDivName) {
 
 
  
- function updateColoringDataChanges(e) {
+ function updateColoringData(e) {
       e.preventDefault();
       var updatedColoring = {};
   updatedColoring.id = document.getElementById("_id").value;
@@ -247,6 +246,7 @@ function displayData(data, containerDivName) {
   updatedColoring.favartist = document.getElementById("favartist").value;
   updatedColoring.adults = document.getElementById("adults").value;
   
+      
     	 
 	  
  $.ajax({
@@ -271,8 +271,7 @@ function displayData(data, containerDivName) {
 function updateBookDataChenges(e) {
       e.preventDefault();
       var updatedBook = {};
-      updatedBook.id = document.getElementById("_id").innerHTML;
-     updatedBook.id = document.getElementById("_id").value;
+  updatedBook.id = document.getElementById("_id").value;
   updatedBook.fullname = document.getElementById("fullname").value;
   updatedBook.author = document.getElementById("author").value;
   updatedBook.colour = document.getElementById("colour").value;
@@ -287,7 +286,6 @@ function updateBookDataChenges(e) {
   updatedBook.publishingyear = document.getElementById("publishingyear").value;
   updatedBook.originalpubdate = document.getElementById("originalpubdate").value;
   updatedBook.genre = document.getElementById("genre").value;
-  
 
 
       $.ajax({
