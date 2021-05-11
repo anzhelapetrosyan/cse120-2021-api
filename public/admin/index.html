@@ -1,0 +1,138 @@
+<html>
+  <head>
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My Favorite Book </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="		crossorigin="anonymous"></script>
+     
+  </head>
+  <body>
+    <div class="container1">
+       <div class="header">
+        <h2>Favorite Books</h2>
+       </div>
+    <!-- </div> -->
+
+    <form class="form" id="form">
+      <div class="form-control">
+             <label>Full Name <sum>*</sum> </label>
+             <br>
+             <input type="text" name="fullname" placeholder="Mike Wazowski" onchange="handleFullNameChange(event)"id="fullname" required>   
+      </div>
+      <br>
+      <div class="form-control">
+             <label>Title <sum>*</sum> </label>
+             <br>
+             <input type="text" name="title" placeholder="The Great Gatsby" onchange="handleTitleChange(event)"  id="title" required>
+      </div>
+      <br>
+      <div class="form-control">
+             <label>Author <sum>*</sum> </label>
+             <br>
+             <input type="text" name="author" placeholder="F. Scott Fitzgerald" onchange="handleAuthorChange(event)"  id="author" required>
+      </div>
+      <br>
+      <div class="form-control">
+             <label>Colour (Click on the button and choose)! </label>
+             <br>
+             <input type="color" name="colour" id="colour" onchange="handleColorChange(event)"  required>
+      </div>
+      <br>
+            <div class="form-control">
+       <label for="covertype">Cover Type <span style="color:red">* </span></label><br>
+       <input type="radio" id="covertype" name="covertype" value="paperback" onchange="handleCoverTypeChange(event)" required>
+       <label for="paperback">Paperback </label><br>
+       <input type="radio" id="covertype" name="covertype" value="hardcover" onchange="handleCoverTypeChange(event)" required>
+       <label for="hardcover">Hardcover </label><br>
+       <input type="radio" id="covertype" name="covertype" value="other" onchange="handleCoverTypeChange(event)" required>
+       <label for="othercover">Other </label> <input type="text" id="othertext" name="covertype" onblur="handleCustomTypeChange()"> <br>
+      </div>
+      <br>
+      <div class="form-control">
+          <label>Number of pages <sum>*</sum> </label>
+          <br>
+          <input type="number" name="numberofpages" onchange="handleNumberofPagesChange(event)"  placeholder="325" id="numberofpages" required>
+      </div>
+      <br>
+      <div class="form-control">
+          <label>Price</label>
+          <br>
+          <input type="number" name="price" onchange="handlePriceChange(event)" placeholder="5000" id="price">
+      </div> 
+      <br>
+      <div class="form-control">
+            <label> Currency</label>
+            <br>
+            <input type=text name='option' onchange="handleCurrencyChange(event)"  id='currency'>
+      </div>   
+      <br> 
+      <div class="form-control">
+        <label for="language">Language <sum>*</sum></label><br>
+        <input type="radio" id="english" name="language" value="english" onchange="handleLanguageChange(event)" required>
+        <label for="english">English </label><br>
+        <input type="radio" id="armenian" name="language" value="armenian" onchange="handleLanguageChange(event)" required>
+        <label for="armenian">Armenian </label><br>
+        <input type="radio" id="russian" name="language" value="russian" onchange="handleLanguageChange(event)" required>
+        <label for="russian">Russian </label><br>
+        <input type="radio" id="french" name="language" value="french" onchange="handleLanguageChange(event)" required>
+        <label for="french">French </label><br>
+        <input type="radio" id="otherlanguage" name="language" value="other" onchange="handleLanguageChange(event)" required>
+        <label for="otherlanguage">Other </label> <input type="text" id="otherlangtext" onblur="handleCustomLangChange()"> <br> 
+  </div>
+  <br>
+      <div class="form-control">
+           <label>Edition</label>  
+           <br>
+           <input type="number" onchange="handleEditionChange(event)"  placeholder="2" id="edition"> 
+      </div>
+      <br>
+    <div class="form-control">
+            <label>Dimensions</label>
+            <br>
+            <input type="number" placeholder="Length" onchange="handleDimensionsChange(event)"  id="dimensions">
+            <br>
+            <input type="number" placeholder="Width" id="dimensions" onchange="handleDimensionsChange(event)" >
+            <br>
+            <input type="number" onchange="handleDimensionsChange(event)" placeholder="Height" id="dimensions">
+         
+      </div>
+      <br>
+      <div class="form-control">
+           <label>Publisher <sum>*</sum> </label>
+           <br>
+           <input type="text" onchange="handlePublisherChange(event)"  placeholder="Charles Scribner's Sons" id="publisher">
+      </div>
+      <br>
+      <div class="form-control">
+           <label>Publishing Date</label>
+           <br>
+           <input type="date" onchange="handlePubYearChange(event)"  id="publishingyear">
+
+      </div>
+      <br>
+      <div class="form-control">
+           <label>Original Publishing Date</label>
+           <br>
+           <input type="date" id="originalpubdate" onchange="handleOriginalPubYearChange(event)" >
+
+      </div>
+      <br>
+      <div class="form-control">
+      <label>Genre <sum>*</sum></label>
+      <br>
+      <input type="text" id="genre" onchange="handleGenreChange(event)" required>
+      </div>
+      <div>
+
+         <button id="Submit" onclick="SaveData(event)">Submit</button>
+
+      </div>
+      
+  </form>
+  <script src="script.js"></script>
+    </div>
+</body>
+</html>
+
+     
