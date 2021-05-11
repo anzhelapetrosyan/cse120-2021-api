@@ -485,7 +485,7 @@ function updateData(e) {
   }
 function UpdateColoringData(e) {
   e.preventDefault();
-  var updatedTennis = {};
+  var updatedColoring = {};
   updatedColoring.id = document.getElementById("_id").value;
   updatedColoring.fullname = document.getElementById("fullname").value;
   updatedColoring.country = document.getElementById("country").value;
