@@ -483,7 +483,7 @@ function updateData(e) {
       }
     });
   }
-function UpdateColoringData(e) {
+function updateColoringData(e) {
   e.preventDefault();
   var updatedColoring = {};
   updatedColoring.id = document.getElementById("_id").value;
@@ -506,6 +506,7 @@ function UpdateColoringData(e) {
       dataType : 'json',
       success: function (data) {
         console.log("success");
+        window.location.href = window.location.origin + '/admin/admin.html'
       },
       error: function (xhr) {
         console.error("Error in post", xhr);
